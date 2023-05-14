@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
       </motion.div>
       <Image
-        src={"/heroBg.png"}
+        src={"/herobg.png"}
         fill
         style={{ objectFit: "cover", objectPosition: "center" }}
         alt="hero image"
