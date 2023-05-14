@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -16,14 +19,20 @@ const Solution = () => {
             commande en ligne intuitive et efficace. Avec notre solution, vos
             clients peuvent commander facilement depuis leur téléphone ou leur
             ordinateur, sans attendre au téléphone ou en personne. Vous pouvez
-            personnaliser votre menu en fonction de vos préférences, de l'heure
-            de la journée et des événements spéciaux. Notre solution vous permet
-            également de mieux connaître vos clients en recueillant des
-            informations importantes telles que leurs préférences alimentaires
-            et leurs coordonnées.
+            personnaliser votre menu en fonction de vos préférences, de
+            l&apos;heure de la journée et des événements spéciaux. Notre
+            solution vous permet également de mieux connaître vos clients en
+            recueillant des informations importantes telles que leurs
+            préférences alimentaires et leurs coordonnées.
           </p>
           <div className="flex-1 w-full lg:w-auto mt-10 lg:mt-0">
-            <div className="solution">
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75 }}
+              className="solution"
+            >
               <Image
                 src={"/cooking.png"}
                 alt="solution"
@@ -34,7 +43,7 @@ const Solution = () => {
                   borderRadius: "0 200px",
                 }}
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

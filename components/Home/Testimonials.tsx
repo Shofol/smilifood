@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
 import { Testimonial, testimonials } from "../../data/testimonialsData";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
@@ -18,7 +19,13 @@ const Testimonials = () => {
             Essayer Smili food c’est l’adopter!
           </p>
         </div>
-        <div className="lg:ml-20">
+        <motion.div
+          initial={{ translateX: 100 }}
+          whileInView={{ translateX: 0 }}
+          transition={{ duration: 0.75 }}
+          viewport={{ once: true }}
+          className="lg:ml-20"
+        >
           <Swiper
             // slidesPerView={2.8}
             onSlideChange={() => console.log("slide change")}
@@ -65,7 +72,7 @@ const Testimonials = () => {
               );
             })}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

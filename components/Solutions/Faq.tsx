@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FAQ, faqsData } from "../../data/faqs";
 import { Disclosure, Transition } from "@headlessui/react";

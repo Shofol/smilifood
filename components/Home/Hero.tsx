@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Button from "../layout/Button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const icon = (
@@ -22,7 +25,12 @@ const Hero = () => {
 
   return (
     <div className="flex flex-col lg:flex-row gap-10 items-center py-20 max-w-7xl mx-auto">
-      <div className="px-5 lg:px-0">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75 }}
+        className="px-5 lg:px-0"
+      >
         <h1 className="text-4xl lg:text-5xl font-bold text-br-dark leading-tight">
           Economisez du temp et de l’argent avec votre logiciel Smili food
         </h1>
@@ -40,15 +48,20 @@ const Hero = () => {
             icon={icon}
           />
         </div>
-      </div>
-      <div className=" bg-br-light artBorder">
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.75 }}
+        className=" bg-br-light artBorder"
+      >
         <Image
           src={"/art.svg"}
           width={1500}
           height={1000}
           alt="restaurant illustration"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { advantagessData } from "../../data/advantages";
+import { motion } from "framer-motion";
 
 const Advantages = () => {
   return (
@@ -19,13 +22,14 @@ const Advantages = () => {
               réel pour une expérience de commande optimale.
             </p>
           </div>
-          {advantagessData.map((adv) => {
+          {advantagessData.map((adv, index) => {
             return (
               <Card
                 key={adv.title}
                 title={adv.title}
                 content={adv.content}
                 image={adv.image}
+                index={index}
               />
             );
           })}
@@ -39,17 +43,25 @@ const Card = ({
   title,
   image,
   content,
+  index,
 }: {
   title: string;
   image: string;
   content: string;
+  index: number;
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-md text-br-dark px-5 py-10">
+    <motion.div
+      initial={{ translateY: 100 }}
+      whileInView={{ translateY: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.25, delay: index * 0.25 }}
+      className="bg-white shadow-md rounded-md text-br-dark px-5 py-10"
+    >
       <Image src={image} width={80} height={80} alt={title} />
       <h4 className="text-2xl pt-5 font-bold">{title}</h4>
       <p className="pt-4">{content}</p>
-    </div>
+    </motion.div>
   );
 };
 

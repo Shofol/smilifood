@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React, { ReactNode } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
@@ -52,14 +54,6 @@ const SalesFeatures = () => {
         </div>
       </div>
       <div className="flex-1 flex flex-col justify-center px-5 lg:px-0">
-        {/* <h3 className="text-4xl text-br-dark font-semibold">
-          Augmentez vos ventes.
-        </h3>
-        <p className="text-br-ldark pt-2">
-          Faites le choix du click & collect pour offrir à vos clients une
-          expérience de commande en ligne rapide et pratique, tout en augmentant
-          vos ventes.
-        </p> */}
         <div className="mt-10 border-l-4 pl-5 lg:pl-10 lg:ml-5 border-l-br-primary">
           {salesFeaturesData.map((feature: SalesFeature) => {
             return (

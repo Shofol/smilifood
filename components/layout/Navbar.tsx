@@ -79,33 +79,6 @@ const Navbar = () => {
             </Link>
           );
         })}
-        {/* <Link
-          href={"/solutions"}
-          className={
-            "hover:text-br-primary transition-colors duration-100 " +
-            (pathName === "text-br-primary" ? "" : "")
-          }
-        >
-          Solutions
-        </Link>
-        <Link
-          href={"/contact"}
-          className={
-            "hover:text-br-primary transition-colors duration-100 " +
-            (pathName === "text-br-primary" ? "" : "")
-          }
-        >
-          Contact
-        </Link>
-        <Link
-          href={"/blog"}
-          className={
-            "hover:text-br-primary transition-colors duration-100 " +
-            (pathName === "text-br-primary" ? "" : "")
-          }
-        >
-          Blog
-        </Link> */}
         <Link
           href={"/connexion"}
           className="bg-br-dark px-5 py-2 text-white rounded-md hover:bg-br-primary hover:text-br-dark transition-colors duration-300"
