@@ -6,10 +6,11 @@ const Advantages = () => {
   return (
     <div className="bg-br-bg py-24">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-4 gap-10">
-          <div className="col-span-2 text-br-dark text-right">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 px-5 lg:px-0">
+          <div className="lg:col-span-2 text-br-dark text-center lg:text-right">
             <h3 className="text-4xl font-bold">
-              Tous les avantages d&apos;un <br /> menu connecté
+              Tous les avantages d&apos;un <br className="hidden lg:block" />{" "}
+              menu connecté
             </h3>
             <p className="pt-4">
               Offrez à votre restaurant tous les avantages d&apos;une carte

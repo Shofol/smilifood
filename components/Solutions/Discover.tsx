@@ -3,7 +3,7 @@ import Button from "../layout/Button";
 
 const Discover = () => {
   return (
-    <div className="bg-br-gray py-24 text-br-dark text-center">
+    <div className="bg-br-gray py-24 text-br-dark text-center px-5 lg:px-0">
       <h3 className="text-4xl font-bold">Découvrez Smili Menu connecté +</h3>
       <p className="pt-2">
         Stop la perde de temp au nieveau de la prise de commande ! laissez voq
