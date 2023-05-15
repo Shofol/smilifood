@@ -114,6 +114,10 @@ const routes: Route[] = [
     title: "Blog",
     href: "/blog",
   },
+  {
+    title: "Connexion",
+    href: "/connexion",
+  },
 ];
 
 interface Route {
