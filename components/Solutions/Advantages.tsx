@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Advantages = () => {
   return (
-    <div className="bg-br-bg py-24">
+    <div className="bg-br-mgreen py-24">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 px-5 lg:px-0">
           <div className="lg:col-span-2 text-br-dark text-center lg:text-right">

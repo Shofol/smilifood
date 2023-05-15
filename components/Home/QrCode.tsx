@@ -30,9 +30,9 @@ const QrCode = () => {
       <div className="flex justify-center items-center my-4">
         <Button
           title={isHome ? "Nous conctacter" : "Essayer Smili Menu connecté"}
-          type="primary"
+          type={isHome ? "primary" : "secondary"}
           actionType="link"
-          className="shadow-md px-8"
+          className={"shadow-md px-8 "}
         />
       </div>
     </div>

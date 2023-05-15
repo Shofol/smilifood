@@ -73,7 +73,7 @@ const Support = () => {
         <div className="flex justify-center lg:justify-start lg:ml-8 my-2">
           <Button
             title="Nous conctacter"
-            type="dark"
+            type="primary"
             actionType="link"
             className="py-1"
           />

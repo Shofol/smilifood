@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <div className="w-full bg-br-bg py-24 my-10 px-5 lg:px-0 lg:my-24">
+    <div className="w-full bg-br-mgreen py-24 my-10 px-5 lg:px-0 lg:my-24">
       <div className=" flex flex-col">
         <div className="max-w-7xl mx-auto w-full text-br-dark lg:pl-10">
           <h3 className="text-left text-4xl">

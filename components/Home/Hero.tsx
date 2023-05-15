@@ -24,7 +24,7 @@ const Hero = () => {
   );
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 items-center py-20 max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row gap-10 items-center py-20 max-w-7xl mx-auto mt-10 lg:mt-24">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

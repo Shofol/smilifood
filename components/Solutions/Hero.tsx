@@ -6,7 +6,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative mt-10 lg:mt-24">
       <div className="bg-black absolute left-0 top-0 w-full h-full opacity-50 z-10"></div>
       <motion.div
         initial={{ opacity: 0 }}

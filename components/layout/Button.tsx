@@ -20,7 +20,9 @@ const Button = ({
     ` flex items-center px-5 py-3 rounded-md text-white transition-colors duration-300 
         ${
           type === "primary"
-            ? "bg-br-primary hover:bg-br-ylw-light"
+            ? "bg-br-primary hover:bg-br-secondary"
+            : type === "secondary"
+            ? "bg-br-mgreen hover:bg-br-primary"
             : "bg-br-dark hover:bg-br-primary hover:text-br-dark"
         } ` + className;
 

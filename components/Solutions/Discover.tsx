@@ -12,9 +12,9 @@ const Discover = () => {
       <div className="flex justify-center items-center mt-4">
         <Button
           title="Découvrir"
-          type="dark"
+          type="secondary"
           actionType="link"
-          className="px-12"
+          className="px-16"
         />
       </div>
     </div>

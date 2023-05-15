@@ -15,9 +15,9 @@ const SmiliFeatures = () => {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="bg-br-light p-12 shadow-md rounded-lg"
+          className="bg-br-primary p-12 shadow-md rounded-lg"
         >
-          <h3 className="text-br-ylw-light text-2xl font-bold pb-5">
+          <h3 className="text-br-lgreen-2 text-2xl font-bold pb-5">
             Une visibilité digitale
           </h3>
           <p className="text-br-ldark">
@@ -30,9 +30,9 @@ const SmiliFeatures = () => {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="bg-br-secondary p-12 shadow-md rounded-lg"
+          className="bg-br-mgreen p-12 shadow-md rounded-lg"
         >
-          <h3 className="text-br-ylw-medium text-2xl font-bold pb-5">
+          <h3 className="text-br-mgreen-2 text-2xl font-bold pb-5">
             Facilitation prise de commmande
           </h3>
           <p className="text-br-ldark">
@@ -45,9 +45,9 @@ const SmiliFeatures = () => {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="bg-br-primary p-12 shadow-md rounded-lg"
+          className="bg-br-dgreen p-12 shadow-md rounded-lg"
         >
-          <h3 className="text-br-ylw-dark text-2xl font-bold pb-5">
+          <h3 className="text-br-mgreen text-2xl font-bold pb-5">
             Augmentation du panier moyen
           </h3>
           <p className="text-br-ldark">

@@ -57,10 +57,6 @@ const Benefits = () => {
         <h3 className="text-4xl text-br-dark font-semibold">
           Augmentez votre chiffre d’affaire tout en gagnant du temps
         </h3>
-        {/* <p className="text-br-ldark pt-2">
-          Offrez une expérience de commande exceptionnelle pour
-          <br /> vous et vos clients.
-        </p> */}
         <div className="mt-10 border-l-4 pl-5 lg:pl-10 lg:ml-5 border-l-br-primary">
           {benefitsData.map((benefit: Benefit) => {
             return (

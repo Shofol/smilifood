@@ -17,7 +17,7 @@ const How = () => {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="bg-br-light p-12 shadow-md rounded-lg flex flex-col items-center"
+          className="bg-br-primary  p-12 shadow-md rounded-lg flex flex-col items-center"
         >
           <Image
             src={"/icon.png"}
@@ -26,7 +26,7 @@ const How = () => {
             alt={"Rien de plus simple"}
           />
 
-          <h3 className="text-center text-br-ylw-light text-2xl font-bold py-5">
+          <h3 className="text-center text-br-lgreen-2 text-2xl font-bold py-5">
             Le client scanne votre code QR
           </h3>
         </motion.div>
@@ -35,7 +35,7 @@ const How = () => {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="bg-br-secondary p-12 shadow-md rounded-lg flex flex-col items-center"
+          className="bg-br-mgreen p-12 shadow-md rounded-lg flex flex-col items-center"
         >
           <Image
             src={"/icon.png"}
@@ -44,7 +44,7 @@ const How = () => {
             alt={"Le client scanne votre code QR"}
           />
 
-          <h3 className="text-center text-br-ylw-medium text-2xl font-bold py-5">
+          <h3 className="text-center text-br-mgreen-2 text-2xl font-bold py-5">
             Il consulte votre carte depuis son téléphone
           </h3>
         </motion.div>
@@ -53,7 +53,7 @@ const How = () => {
           whileInView={{ translateY: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="bg-br-primary p-12 shadow-md rounded-lg flex flex-col items-center"
+          className="bg-br-dgreen p-12 shadow-md rounded-lg flex flex-col items-center"
         >
           <Image
             src={"/icon.png"}
@@ -62,7 +62,7 @@ const How = () => {
             alt={"Il consulte votre carte depuis son téléphone"}
           />
 
-          <h3 className="text-center text-br-ylw-dark text-2xl font-bold py-5">
+          <h3 className="text-center text-br-mgreen text-2xl font-bold py-5">
             La commande est prise par le serveur
           </h3>
         </motion.div>

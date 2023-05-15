@@ -6,7 +6,7 @@ import React from "react";
 
 const Solution = () => {
   return (
-    <div className="bg-br-bg">
+    <div className="bg-br-mgreen">
       <div className="max-w-7xl mx-auto py-24 text-br-dark px-5 lg:px-0">
         <h2 className="text-4xl font-bold mb-10">
           Profitez de notre solution numérique optimisée pour un parcours

@@ -29,7 +29,7 @@ const AppFeatures = () => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth="3"
-      stroke="#FFCA7A"
+      stroke="#68B8BE"
       className="w-5 h-5"
     >
       <path
