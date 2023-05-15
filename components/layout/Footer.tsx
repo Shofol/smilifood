@@ -86,12 +86,12 @@ const Footer = () => {
               Inscrivez-vous à notre newsletter et recevez mensuellement des
               articles sur les bars et restaurants
             </p>
-            <div className="mt-4 flex">
+            <div className="mt-4 flex flex-col lg:flex-row">
               <input
                 type="text rounded"
                 className="rounded-md bg-white border-white border-2 pl-2"
               />
-              <button className="px-4 py-1 bg-br-primary text-white rounded-md ml-2 hover:opacity-80">
+              <button className="px-4 py-1 bg-br-primary text-white rounded-md mt-2 lg:mt-0 lg:ml-2 hover:opacity-80">
                 S’inscrire
               </button>
             </div>
@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
         <div className="w-full bg-br-lgreen h-px"></div>
 
-        <div className="flex justify-between text-br-lgreen pt-2 pb-4 text-sm">
+        <div className="flex flex-col lg:flex-row justify-between text-br-lgreen pt-2 pb-4 text-sm">
           <p>
             &copy; {new Date().getFullYear()} SmiliFood, Tous les droits sont
             réservés
