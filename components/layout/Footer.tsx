@@ -5,19 +5,19 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-br-graybg">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto flex flex-col">
         <div className="px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-3 text-br-dark pt-16 pb-10">
           <div className="flex flex-col justify-start items-start ">
             <Link href={"/"}>
               <Image src={"/logo.png"} width={250} height={60} alt="logo" />
             </Link>
-            <p className="pt-6 pl-2 text-br-secondary">
+            <p className="pt-2 lg:pt-6 pl-2 text-br-secondary">
               Economisez du temp et de l’argent <br /> avec votre logiciel Smili
               food
             </p>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col py-10 lg:py-0 pl-2 lg:pl-0">
             <ul className="mb-10 text-br-secondary text-xl">
               <li className="mb-4">
                 <Link className="hover:text-br-primary" href={"/"}>
