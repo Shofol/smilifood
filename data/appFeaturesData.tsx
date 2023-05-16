@@ -77,12 +77,10 @@ export const featuresData: Feature[] = [
         </div>
       </>
     ),
-    last: true,
   },
 ];
 
 export interface Feature {
   heading: string;
   content: ReactNode;
-  last?: boolean;
 }

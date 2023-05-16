@@ -11,7 +11,7 @@ const QrCode = () => {
     <div className="flex flex-col mb-24 pt-24">
       <div className="flex flex-col lg:flex-row px-5 lg:px-0 justify-between items-center max-w-7xl mx-auto lg:gap-20">
         <div className="text-br-dark text-center lg:text-left">
-          <h3 className="text-4xl font-bold">
+          <h3 className="text-3xl font-bold">
             Un exemple de carte connecté, <br className="hidden lg:block" />
             scan le Code QR !
           </h3>

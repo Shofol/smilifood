@@ -8,12 +8,12 @@ const Solution = () => {
   return (
     <div className="bg-br-mgreen">
       <div className="max-w-7xl mx-auto py-24 text-br-dark px-5 lg:px-0">
-        <h2 className="text-4xl font-bold mb-10">
+        <h2 className="text-3xl text-center font-bold mb-10">
           Profitez de notre solution numérique optimisée pour un parcours
           digital fluide et efficace, tant pour vos clients que pour votre
           restaurant.
         </h2>
-        <div className="flex flex-col lg:flex-row items-center lg:gap-48 mt-10 lg:mt-24">
+        <div className="flex flex-col lg:flex-row items-center lg:gap-48 mt-10 lg:mt-20">
           <p className="text-xl flex-1 lg:items-center">
             Améliorez votre expérience client en proposant une solution de
             commande en ligne intuitive et efficace. Avec notre solution, vos

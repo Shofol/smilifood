@@ -11,7 +11,7 @@ const Advantages = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 px-5 lg:px-0">
           <div className="lg:col-span-2 text-br-dark text-center lg:text-right">
-            <h3 className="text-4xl font-bold">
+            <h3 className="text-3xl font-bold">
               Tous les avantages d&apos;un <br className="hidden lg:block" />{" "}
               menu connecté
             </h3>

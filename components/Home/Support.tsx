@@ -9,11 +9,11 @@ const Support = () => {
   return (
     <div className="w-full flex flex-col lg:flex-row py-20 max-w-7xl mx-auto">
       <div className="flex-1 px-5 lg:px-0">
-        <h3 className="text-4xl lg:text-5xl font-bold text-br-dark border-l-br-primary border-l-4 pl-6">
+        <h3 className="lg:text-3xl font-bold text-br-dark border-l-br-primary border-l-4 pl-6">
           Une assistance de qualité <br className="hidden lg:block" />
           supérieure.
         </h3>
-        <p className="text-xl lg:text-2xl pt-4 pl-8 text-br-dark">
+        <p className="text-lg pt-4 pl-8 text-br-dark">
           Nos clients ont confiance en notre fiabilité au quotidien!
         </p>
         <div className="flex my-10">
@@ -67,7 +67,7 @@ const Support = () => {
           </div>
         </div>
 
-        <p className="text-2xl text-br-dark text-center lg:text-left lg:pl-8 mt-4">
+        <p className="text-xl text-br-dark text-center lg:text-left lg:pl-8 mt-4">
           Vous avez des questions ?
         </p>
         <div className="flex justify-center lg:justify-start lg:ml-8 my-2">

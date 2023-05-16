@@ -12,7 +12,7 @@ const Testimonials = () => {
     <div className="w-full bg-br-mgreen py-24 my-10 px-5 lg:px-0 lg:my-24">
       <div className=" flex flex-col">
         <div className="max-w-7xl mx-auto w-full text-br-dark lg:pl-10">
-          <h3 className="text-left text-4xl">
+          <h3 className="text-left text-3xl font-bold">
             Découvrez les avis de nos cleints
           </h3>
           <p className="text-xl mt-2 border-l-4 border-l-br-primary pl-2">

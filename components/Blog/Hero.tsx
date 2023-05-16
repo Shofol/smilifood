@@ -14,7 +14,7 @@ const Hero = () => {
         transition={{ duration: 0.75 }}
         className="relative py-48 z-10 text-white max-w-4xl px-5 lg:px-0 lg:pl-28"
       >
-        <h1 className="text-5xl lg:text-6xl font-bold pl-4 mb-4 border-l-4 border-l-br-primary">
+        <h1 className="text-5xl font-bold pl-4 mb-4 border-l-4 border-l-br-primary">
           Smili commande en ligne
         </h1>
         <p className="text-xl text-justify lg:pr-36">

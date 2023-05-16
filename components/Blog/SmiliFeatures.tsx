@@ -6,7 +6,7 @@ import React from "react";
 const SmiliFeatures = () => {
   return (
     <div className="pt-5 lg:pt-24 max-w-7xl mx-auto">
-      <h2 className="text-4xl lg:text-5xl font-bold text-br-dark text-center">
+      <h2 className="text-3xl font-bold text-br-dark text-center">
         Augmentez vos commandes en ligne avec Smili
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:my-20 my-10 px-5 lg:px-0">

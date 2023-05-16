@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Features = () => {
   return (
     <div className="pt-5 lg:pt-24 max-w-7xl mx-auto">
-      <h2 className="text-4xl lg:text-5xl font-bold text-br-dark text-center">
+      <h2 className="text-3xl font-bold text-br-dark text-center">
         Smili food un outil tout-en-un pour développer votre activité grâce à
         Internet
       </h2>

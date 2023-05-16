@@ -7,7 +7,7 @@ import React from "react";
 const How = () => {
   return (
     <div className="pt-5 lg:pt-24 max-w-7xl mx-auto px-5 lg:px-0">
-      <h2 className="text-4xl lg:text-5xl font-bold text-br-dark text-center">
+      <h2 className="text-3xl font-bold text-br-dark text-center">
         Comment ca marche ?
       </h2>
       <p className="text-br-dark text-center text-xl">Rien de plus simple...</p>
