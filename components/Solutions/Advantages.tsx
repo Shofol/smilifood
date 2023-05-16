@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import { advantagessData } from "../../data/advantages";
-import { motion } from "framer-motion";
 
 const Advantages = () => {
   return (
@@ -50,18 +49,33 @@ const Card = ({
   content: string;
   index: number;
 }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const fillRef = useRef<HTMLSpanElement>(null);
+
+  const handleFillPosition = (event: any) => {
+    if (fillRef.current && containerRef.current) {
+      fillRef.current.style.left = `${
+        event.pageX - containerRef.current.getBoundingClientRect().left
+      }px`;
+      console.log(containerRef.current.getBoundingClientRect().top);
+      fillRef.current.style.top = `${
+        event.pageY - containerRef.current.getBoundingClientRect().top
+      }px`;
+    }
+  };
   return (
-    <motion.div
-      initial={{ translateY: 100 }}
-      whileInView={{ translateY: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.25, delay: index * 0.25 }}
-      className="bg-white shadow-md rounded-md text-br-dark px-5 py-10"
+    <div
+      ref={containerRef}
+      className="bg-white shadow-md rounded-md text-br-dark px-5 py-10 relative cardContainer"
+      onMouseMove={(e) => {
+        handleFillPosition(e);
+      }}
     >
       <Image src={image} width={80} height={80} alt={title} />
       <h4 className="text-2xl pt-5 font-bold">{title}</h4>
       <p className="pt-4">{content}</p>
-    </motion.div>
+      <span ref={fillRef} className="fillElement"></span>
+    </div>
   );
 };
 

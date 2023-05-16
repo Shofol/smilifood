@@ -1,6 +1,4 @@
 "use client";
-
-import { motion } from "framer-motion";
 import React from "react";
 
 const SmiliFeatures = () => {
@@ -10,13 +8,7 @@ const SmiliFeatures = () => {
         Augmentez vos commandes en ligne avec Smili
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:my-20 my-10 px-5 lg:px-0">
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="bg-br-primary p-12 shadow-md rounded-lg"
-        >
+        <div className="bg-br-primary p-12 shadow-md rounded-lg">
           <h3 className="text-br-lgreen-2 text-2xl font-bold pb-5">
             Une visibilité digitale
           </h3>
@@ -24,14 +16,8 @@ const SmiliFeatures = () => {
             Les clients peuvent passer leur commande depuis n&apos;importe où en
             consultant votre menu en ligne
           </p>
-        </motion.div>
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.25 }}
-          className="bg-br-mgreen p-12 shadow-md rounded-lg"
-        >
+        </div>
+        <div className="bg-br-mgreen p-12 shadow-md rounded-lg">
           <h3 className="text-br-mgreen-2 text-2xl font-bold pb-5">
             Facilitation prise de commmande
           </h3>
@@ -39,14 +25,8 @@ const SmiliFeatures = () => {
             Ne perdez plus de temp à prendre vos commandes via télephonne !
             Smili permet à vos clients de commander en toute autonomie.
           </p>
-        </motion.div>
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="bg-br-dgreen p-12 shadow-md rounded-lg"
-        >
+        </div>
+        <div className="bg-br-dgreen p-12 shadow-md rounded-lg">
           <h3 className="text-br-mgreen text-2xl font-bold pb-5">
             Augmentation du panier moyen
           </h3>
@@ -54,7 +34,7 @@ const SmiliFeatures = () => {
             Le logicilel Smili food permet aux restaurateurs avec sa carte
             connecté de voir son panier moyen augmenter jusqu’à 30%
           </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
