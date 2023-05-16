@@ -39,3 +39,20 @@ body {
   min-height: 40rem;
   position: relative;
 }
+
+.cardContainer:hover .fillElement {
+  width: 300%;
+  height: 300%;
+}
+
+.fillElement {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+}

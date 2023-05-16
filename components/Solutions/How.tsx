@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -12,13 +11,7 @@ const How = () => {
       </h2>
       <p className="text-br-dark text-center text-xl">Rien de plus simple...</p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:my-20 my-10 px-5 lg:px-0">
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="bg-br-primary  p-12 shadow-md rounded-lg flex flex-col items-center"
-        >
+        <div className="bg-br-primary  p-12 shadow-md rounded-lg flex flex-col items-center">
           <Image
             src={"/icon.png"}
             width={80}
@@ -29,14 +22,8 @@ const How = () => {
           <h3 className="text-center text-br-lgreen-2 text-2xl font-bold py-5">
             Le client scanne votre code QR
           </h3>
-        </motion.div>
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.25 }}
-          className="bg-br-mgreen p-12 shadow-md rounded-lg flex flex-col items-center"
-        >
+        </div>
+        <div className="bg-br-mgreen p-12 shadow-md rounded-lg flex flex-col items-center">
           <Image
             src={"/icon.png"}
             width={80}
@@ -47,14 +34,8 @@ const How = () => {
           <h3 className="text-center text-br-mgreen-2 text-2xl font-bold py-5">
             Il consulte votre carte depuis son téléphone
           </h3>
-        </motion.div>
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="bg-br-dgreen p-12 shadow-md rounded-lg flex flex-col items-center"
-        >
+        </div>
+        <div className="bg-br-dgreen p-12 shadow-md rounded-lg flex flex-col items-center">
           <Image
             src={"/icon.png"}
             width={80}
@@ -65,7 +46,7 @@ const How = () => {
           <h3 className="text-center text-br-mgreen text-2xl font-bold py-5">
             La commande est prise par le serveur
           </h3>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 
 const Features = () => {
   return (
@@ -11,13 +10,7 @@ const Features = () => {
         Internet
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:my-20 my-10 px-5 lg:px-0">
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="bg-br-primary p-12 shadow-md rounded-lg"
-        >
+        <div className="bg-br-primary p-12 shadow-md rounded-lg">
           <h3 className="text-br-lgreen-2 text-2xl font-bold pb-5">
             Gagnez des clients
           </h3>
@@ -26,14 +19,8 @@ const Features = () => {
             offrez une expérience de commande fluide sur place avec nos
             solutions.
           </p>
-        </motion.div>
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.25 }}
-          className="bg-br-mgreen p-12 shadow-md rounded-lg"
-        >
+        </div>
+        <div className="bg-br-mgreen p-12 shadow-md rounded-lg">
           <h3 className="text-br-mgreen-2 text-2xl font-bold pb-5">
             Gagnez du temp
           </h3>
@@ -42,14 +29,8 @@ const Features = () => {
             conçues pour améliorer l&apos;expérience client et celle de votre
             équipe.
           </p>
-        </motion.div>
-        <motion.div
-          initial={{ translateY: 100 }}
-          whileInView={{ translateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="bg-br-dgreen p-12 shadow-md rounded-lg"
-        >
+        </div>
+        <div className="bg-br-dgreen p-12 shadow-md rounded-lg">
           <h3 className="text-br-mgreen text-2xl font-bold pb-5">
             Augmentez votre CA
           </h3>
@@ -57,7 +38,7 @@ const Features = () => {
             Maximisez votre panier chiffre d’affaireen créant des parcours de
             commande optimisés avec Smili food.
           </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
