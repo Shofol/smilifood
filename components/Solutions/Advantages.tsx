@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { ReactNode, useRef } from "react";
 import { advantagessData } from "../../data/advantages";
 
 const Advantages = () => {
@@ -45,7 +45,7 @@ const Card = ({
   index,
 }: {
   title: string;
-  image: string;
+  image: ReactNode;
   content: string;
   index: number;
 }) => {
@@ -55,25 +55,25 @@ const Card = ({
   const handleFillPosition = (event: any) => {
     if (fillRef.current && containerRef.current) {
       fillRef.current.style.left = `${
-        event.pageX - containerRef.current.getBoundingClientRect().left
+        event.clientX - containerRef.current.getBoundingClientRect().left
       }px`;
       console.log(containerRef.current.getBoundingClientRect().top);
       fillRef.current.style.top = `${
-        event.pageY - containerRef.current.getBoundingClientRect().top
+        event.clientY - containerRef.current.getBoundingClientRect().top
       }px`;
     }
   };
   return (
     <div
       ref={containerRef}
-      className="bg-white shadow-md rounded-md text-br-dark px-5 py-10 relative cardContainer"
+      className="bg-white shadow-md rounded-md text-br-dark px-5 py-10 relative overflow-hidden cardContainer"
       onMouseMove={(e) => {
         handleFillPosition(e);
       }}
     >
-      <Image src={image} width={80} height={80} alt={title} />
-      <h4 className="text-2xl pt-5 font-bold">{title}</h4>
-      <p className="pt-4">{content}</p>
+      {image}
+      <h4 className="text-2xl pt-5 font-bold z-10 relative">{title}</h4>
+      <p className="pt-4 z-10 relative">{content}</p>
       <span ref={fillRef} className="fillElement"></span>
     </div>
   );
