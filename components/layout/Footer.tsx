@@ -19,9 +19,19 @@ const Footer = () => {
 
           <div className="flex flex-col py-10 lg:py-0 pl-2 lg:pl-0">
             <ul className="mb-10 text-br-secondary text-xl">
-              <li className="mb-4">
-                <Link className="hover:text-br-primary" href={"/"}>
-                  Solutions
+              <li className="mb-4 flex flex-col">
+                <span>Solutions</span>
+                <Link
+                  className="text-br-dark text-sm hover:text-br-primary"
+                  href={"/solutions"}
+                >
+                  Menu connecté
+                </Link>
+                <Link
+                  className="text-br-dark text-sm hover:text-br-primary"
+                  href={"/blog"}
+                >
+                  Commande en ligne
                 </Link>
               </li>
               <li className="mb-4">

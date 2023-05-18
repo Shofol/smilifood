@@ -53,7 +53,6 @@ const Hero = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.75 }}
-        className=" bg-br-light artBorder"
       >
         <Image
           src={"/art.svg"}

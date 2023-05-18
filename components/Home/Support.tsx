@@ -80,12 +80,12 @@ const Support = () => {
         </div>
       </div>
 
-      <div className="flex justify-end items-end pt-10 pb-0 lg:py-0">
+      <div className="flex justify-start items-end pt-10 pb-0 lg:py-0">
         <Image
-          src={"/supportArt.jpg"}
+          src={"/supportArt.svg"}
           alt="support art"
           width={500}
-          height={500}
+          height={400}
         />
       </div>
     </div>

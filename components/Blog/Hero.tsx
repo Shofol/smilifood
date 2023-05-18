@@ -6,28 +6,30 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full relative mt-10 lg:mt-24">
-      <div className="bg-black absolute left-0 top-0 w-full h-full opacity-50 z-10"></div>
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start relative mt-36 lg:mt-48">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
-        className="relative py-48 z-10 text-white max-w-4xl px-5 lg:px-0 lg:pl-28"
+        className="flex-1 relative z-10 text-br-dark px-5 lg:px-0"
       >
-        <h1 className="text-5xl font-bold pl-4 mb-4 border-l-4 border-l-br-primary">
-          Smili commande en ligne
-        </h1>
-        <p className="text-xl text-justify lg:pr-36">
+        <h1 className="text-5xl font-bold mb-4">Smili commande en ligne</h1>
+        <h2 className="text-2xl pb-4 ">
+          Augmentez le nombre de commandes en ligne
+        </h2>
+        <p className="text-lg lg:text-xl text-br-lgreen text-justify lg:pr-36 pl-4 border-l-4 border-l-br-primary">
           Ne perdez plus de temp à décrocher au téléphone et augmentez vos
           ventes
         </p>
       </motion.div>
-      <Image
-        src={"/herobg.png"}
-        fill
-        style={{ objectFit: "cover", objectPosition: "center" }}
-        alt="hero image"
-      />
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.75 }}
+        className="flex-1 flex justify-end items-end px-10 lg:px-0 py-16 lg:py-0"
+      >
+        <Image src={"/blogArt.svg"} width={500} height={500} alt="hero image" />
+      </motion.div>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
   const pathName = usePathname();
+  const [currentMenu, setCurrentMenu] = useState("");
 
   return (
     <div className="fixed left-0 top-0 w-full bg-white z-30">
@@ -40,8 +41,8 @@ const Navbar = () => {
         </div>
         <div
           className={
-            "flex-col lg:flex-row gap-6 items-center text-dark absolute left-0 top-0 bg-white z-20 w-full lg:w-auto py-10 lg:py-0 lg:relative " +
-            (showMobileNavbar ? "flex" : "hidden lg:flex")
+            "flex-col lg:flex-row gap-6 items-start lg:items-center px-5 lg:px-0 text-dark left-0 top-0 bg-white z-20 w-full lg:w-auto py-10 lg:py-0 " +
+            (showMobileNavbar ? "absolute flex" : "hidden lg:flex")
           }
         >
           <div className="flex justify-end w-full mr-10 lg:hidden">
@@ -68,21 +69,96 @@ const Navbar = () => {
           </div>
           {routes.map((route) => {
             return (
-              <Link
-                onClick={() => {
-                  setShowMobileNavbar(false);
-                }}
-                key={route.title}
-                href={route.href}
-                className={
-                  "hover:text-br-primary transition-colors duration-100 " +
-                  (pathName === route.href
-                    ? "text-br-primary "
-                    : "text-br-secondary ")
-                }
-              >
-                {route.title}
-              </Link>
+              <div key={route.title} className="flex flex-col">
+                <Link
+                  onClick={(e) => {
+                    if (!route.href) {
+                      e.stopPropagation();
+                    }
+                    setShowMobileNavbar(false);
+                  }}
+                  onMouseMove={() => {
+                    if (!route.href) {
+                      setCurrentMenu(route.title);
+                      console.log(currentMenu);
+                    } else {
+                      setCurrentMenu("");
+                    }
+                  }}
+                  href={route.href ? route.href : "/"}
+                  className={
+                    "hover:text-br-primary transition-colors duration-100 " +
+                    (pathName === route.href
+                      ? "text-br-primary "
+                      : "text-br-secondary ")
+                  }
+                >
+                  {route.title}
+                </Link>
+
+                {/* show sub menu on mobile */}
+
+                {!route.href && showMobileNavbar && (
+                  <>
+                    {route.subMenus?.map((menu) => {
+                      return (
+                        <Link
+                          key={menu.title}
+                          href={menu.href ? menu.href : "/"}
+                          onClick={() => setShowMobileNavbar(false)}
+                          className={
+                            "pl-2 hover:text-br-primary transition-colors duration-100 " +
+                            (pathName === route.href
+                              ? "text-br-primary "
+                              : "text-br-secondary ")
+                          }
+                        >
+                          {menu.title}
+                        </Link>
+                      );
+                    })}
+                  </>
+                )}
+
+                {/* show sub menu on desktop */}
+                {!route.href && !showMobileNavbar && (
+                  <div
+                    className={
+                      " border-b-8 border-b-br-secondary absolute max-w-7xl mx-auto left-0 right-0 top-20 w-full bg-transparent " +
+                      (currentMenu === route.title ? "visible" : "invisible")
+                    }
+                    onMouseLeave={() => setCurrentMenu("")}
+                  >
+                    <div className="bg-br-mgreen w-full flex items-center justify-center py-10">
+                      {route.subMenus?.map((menu) => {
+                        return (
+                          <Link
+                            key={menu.title}
+                            href={menu.href ? menu.href : "/"}
+                            className="flex flex-col justify-center px-10 [&:not(:last-child)]:border-r-2 border-r-br-secondary"
+                            onClick={() => {
+                              setCurrentMenu("");
+                            }}
+                          >
+                            <span className="text-center text-white text-xl">
+                              {menu.title}
+                            </span>
+                            {menu.icon && (
+                              <Image
+                                src={menu.icon}
+                                alt={menu.title}
+                                width={160}
+                                height={160}
+                                className="mt-6"
+                              />
+                            )}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
             );
           })}
           <Link
@@ -104,7 +180,9 @@ const routes: Route[] = [
   },
   {
     title: "Solutions",
-    href: "/solutions",
+    subMenus: [
+      { title: "Menu connecté", href: "/solutions", icon: "/menuArt.svg" },
+    ],
   },
   {
     title: "Contact",
@@ -112,7 +190,9 @@ const routes: Route[] = [
   },
   {
     title: "Blog",
-    href: "/blog",
+    subMenus: [
+      { title: "Commande en ligne", href: "/blog", icon: "/blogArt.svg" },
+    ],
   },
   {
     title: "Connexion",
@@ -122,7 +202,9 @@ const routes: Route[] = [
 
 interface Route {
   title: string;
-  href: string;
+  href?: string;
+  icon?: string;
+  subMenus?: Route[];
 }
 
 export default Navbar;

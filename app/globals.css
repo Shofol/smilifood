@@ -31,10 +31,6 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-.artBorder {
-  border-radius: 57% 43% 65% 35% / 53% 41% 59% 47%;
-}
-
 .solution {
   min-height: 40rem;
   position: relative;

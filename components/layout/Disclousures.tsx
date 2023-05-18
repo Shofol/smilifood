@@ -7,8 +7,10 @@ import React, { useRef } from "react";
 
 const Disclousures = ({
   data,
+  action,
 }: {
   data: Feature[] | FAQ[] | SalesFeature[] | Benefit[];
+  action?: Function;
 }) => {
   const ChevronUpIcon = (
     <svg
@@ -47,10 +49,12 @@ const Disclousures = ({
   const refs: any = useRef([]);
 
   const handleClick = (index: number) => {
-    console.log(refs);
-    refs.current.map((ref: any, refIndex: number) => {
+    refs.current.map((closeFunction: any, refIndex: number) => {
       if (refIndex !== index) {
-        ref();
+        closeFunction();
+      }
+      if (action) {
+        action(index);
       }
     });
   };

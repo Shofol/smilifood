@@ -20,6 +20,7 @@ export const featuresData: Feature[] = [
         </div>
       </>
     ),
+    image: "/menu1.png",
   },
   {
     heading: "Commande en ligne.",
@@ -39,6 +40,7 @@ export const featuresData: Feature[] = [
         </div>
       </>
     ),
+    image: "/menu2.png",
   },
   {
     heading: "Réservation table en ligne.",
@@ -58,6 +60,7 @@ export const featuresData: Feature[] = [
         </div>
       </>
     ),
+    image: "/menu3.png",
   },
   {
     heading: "Carte connecté +.",
@@ -77,10 +80,12 @@ export const featuresData: Feature[] = [
         </div>
       </>
     ),
+    image: "/menu4.png",
   },
 ];
 
 export interface Feature {
   heading: string;
   content: ReactNode;
+  image: string;
 }

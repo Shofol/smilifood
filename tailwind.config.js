@@ -15,7 +15,6 @@ module.exports = {
       colors: {
         "br-primary": "#68B8BE",
         "br-secondary": "#456F72",
-        "br-light": "#FFF9E9",
         "br-graybg": "#F0F0F3;",
         "br-dark": "#3B3E3A",
         "br-dgreen": "#5B8388",
@@ -30,6 +29,12 @@ module.exports = {
         "br-lgray": "#F9F9FA;",
         "br-gray": "#E6E8EA",
       },
+      display: ["group-hover"],
+    },
+  },
+  variants: {
+    extend: {
+      display: ["group-hover"],
     },
   },
   plugins: [],
