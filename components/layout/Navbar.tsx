@@ -135,12 +135,12 @@ const Navbar = () => {
                           <Link
                             key={menu.title}
                             href={menu.href ? menu.href : "/"}
-                            className="flex flex-col justify-center px-10 [&:not(:last-child)]:border-r-2 border-r-br-secondary"
+                            className="hover:text-br-secondary transition-colors duration-100 text-white flex flex-col justify-center px-10 [&:not(:last-child)]:border-r-2 border-r-br-secondary"
                             onClick={() => {
                               setCurrentMenu("");
                             }}
                           >
-                            <span className="text-center text-white text-xl">
+                            <span className="text-center text-xl">
                               {menu.title}
                             </span>
                             {menu.icon && (
