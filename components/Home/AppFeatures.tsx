@@ -16,14 +16,22 @@ const AppFeatures = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-7xl mx-auto my-10 lg:my-24">
       <div className="flex-1 h-96 lg:h-auto lg:min-h-screen py-10 lg:mr-20">
         <div className="relative h-full flex">
-          <Image
-            src={currentImage}
-            fill
-            style={{ objectFit: "cover", objectPosition: "top center" }}
-            alt="woman cooking"
-            className="rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
+          {featuresData.map((feature) => {
+            return (
+              <Image
+                key={feature.heading}
+                src={feature.image}
+                fill
+                style={{ objectFit: "cover", objectPosition: "top center" }}
+                alt={feature.heading}
+                className={
+                  "transition-opacity duration-300 rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl " +
+                  (currentImage === feature.image ? "opacity-100" : "opacity-0")
+                }
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            );
+          })}
         </div>
       </div>
       <div className="flex-1 flex flex-col justify-center px-5 lg:px-0">
