@@ -13,7 +13,7 @@ const How = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:my-20 my-10 px-5 lg:px-0">
         <div className="bg-br-primary  p-12 shadow-md rounded-lg flex flex-col items-center">
           <Image
-            src={"/qrIcon.png"}
+            src={"/qrIcon.svg"}
             width={100}
             height={100}
             alt={"Rien de plus simple"}
@@ -25,7 +25,7 @@ const How = () => {
         </div>
         <div className="bg-br-mgreen p-12 shadow-md rounded-lg flex flex-col items-center">
           <Image
-            src={"/menuIcon.png"}
+            src={"/menuIcon.svg"}
             width={100}
             height={100}
             alt={"Le client scanne votre code QR"}
@@ -37,7 +37,7 @@ const How = () => {
         </div>
         <div className="bg-br-dgreen p-12 shadow-md rounded-lg flex flex-col items-center">
           <Image
-            src={"/chefIcon.png"}
+            src={"/chefIcon.svg"}
             width={100}
             height={100}
             alt={"Il consulte votre carte depuis son téléphone"}
