@@ -129,27 +129,27 @@ const Navbar = () => {
                     }
                     onMouseLeave={() => setCurrentMenu("")}
                   >
-                    <div className="bg-br-mgreen w-full flex items-center justify-center py-10">
+                    <div className="bg-br-mgreen w-full flex items-stretch justify-center py-10">
                       {route.subMenus?.map((menu) => {
                         return (
                           <Link
                             key={menu.title}
                             href={menu.href ? menu.href : "/"}
-                            className="hover:text-br-secondary transition-colors duration-100 text-white flex flex-col justify-center px-10 [&:not(:last-child)]:border-r-2 border-r-br-secondary"
+                            className="hover:text-br-secondary transition-colors duration-100 text-white flex flex-col px-10 [&:not(:last-child)]:border-r-2 border-r-br-secondary"
                             onClick={() => {
                               setCurrentMenu("");
                             }}
                           >
-                            <span className="text-center text-xl">
+                            <span className="text-center text-xl mb-5">
                               {menu.title}
                             </span>
                             {menu.icon && (
                               <Image
                                 src={menu.icon}
                                 alt={menu.title}
-                                width={160}
-                                height={160}
-                                className="mt-6"
+                                width={menu.iconWidth}
+                                height={menu.iconHeight}
+                                className="mt-auto"
                               />
                             )}
                           </Link>
@@ -181,7 +181,20 @@ const routes: Route[] = [
   {
     title: "Solutions",
     subMenus: [
-      { title: "Menu connecté", href: "/solutions", icon: "/menuArt.svg" },
+      {
+        title: "Menu connecté",
+        href: "/solutions",
+        icon: "/menuArt.svg",
+        iconWidth: 160,
+        iconHeight: 160,
+      },
+      {
+        title: "Commande en ligne",
+        href: "/blog",
+        icon: "/blogArt.svg",
+        iconWidth: 180,
+        iconHeight: 180,
+      },
     ],
   },
   {
@@ -190,9 +203,6 @@ const routes: Route[] = [
   },
   {
     title: "Blog",
-    subMenus: [
-      { title: "Commande en ligne", href: "/blog", icon: "/blogArt.svg" },
-    ],
   },
   {
     title: "Connexion",
@@ -204,6 +214,8 @@ interface Route {
   title: string;
   href?: string;
   icon?: string;
+  iconWidth?: number;
+  iconHeight?: number;
   subMenus?: Route[];
 }
 
