@@ -203,6 +203,7 @@ const routes: Route[] = [
   },
   {
     title: "Blog",
+    href: "/blog",
   },
   {
     title: "Connexion",
