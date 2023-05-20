@@ -27,7 +27,7 @@ const QrCode = () => {
           <Image src={"/qrcode.png"} width={320} height={320} alt="qr code" />
         </div>
       </div>
-      <div className="flex justify-center items-center my-4">
+      <div className="flex justify-center items-center mt-16 mb-4">
         <Button
           title={isHome ? "Nous conctacter" : "Essayer Smili Menu connecté"}
           type={isHome ? "primary" : "secondary"}
