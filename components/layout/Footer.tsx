@@ -7,8 +7,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col">
         <div className="px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-3 text-br-dark pt-16 pb-10">
           <div className="flex flex-col justify-start items-start ">
-            <Link href={"/"}>
-              <Image src={"/logo.png"} width={250} height={60} alt="logo" />
+            <Link
+              href={"/"}
+              className="text-5xl font-bold font-sans text-br-secondary"
+            >
+              FastFood
             </Link>
             <p className="pt-2 lg:pt-6 pl-2 text-br-secondary">
               Economisez du temp et de l’argent <br /> avec votre logiciel Smili
