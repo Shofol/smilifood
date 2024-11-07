@@ -1,4 +1,3 @@
-import React from "react";
 import QrCode from "../../components/Home/QrCode";
 import Hero from "@/components/Blog/Hero";
 import SmiliFeatures from "@/components/Blog/SmiliFeatures";
@@ -9,7 +8,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Welcome to SmiliFood Blog",
+  description: "Welcome to Fastfood Blog",
 };
 
 const Page = () => {

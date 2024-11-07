@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Footer = () => {
   return (
@@ -111,7 +110,7 @@ const Footer = () => {
 
         <div className="flex flex-col lg:flex-row justify-between text-br-lgreen pt-2 pb-4 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} SmiliFood, Tous les droits sont
+            &copy; {new Date().getFullYear()} Fastfood, Tous les droits sont
             réservés
           </p>
           <Link href={"/"}>Mentions légales</Link>{" "}

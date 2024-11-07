@@ -19,7 +19,7 @@ export const testimonials: Testimonial[] = [
     content: `J’ai découvert le logiciel smili pour lla carte connecté,
         c’est tout simplement extra ! Je peut l’actualiser en temp
         réel, plus besoins de l’imprimante.`,
-    name: "Olivier Garcia",
+    name: "Olivier Garcia 2",
     position: "Directeur",
     image: "/cooking.png",
   },
@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
     content: `J’ai découvert le logiciel smili pour lla carte connecté,
         c’est tout simplement extra ! Je peut l’actualiser en temp
         réel, plus besoins de l’imprimante.`,
-    name: "Olivier Garcia",
+    name: "Olivier Garcia 3",
     position: "Directeur",
     image: "/cooking.png",
   },
@@ -35,7 +35,7 @@ export const testimonials: Testimonial[] = [
     content: `J’ai découvert le logiciel smili pour lla carte connecté,
         c’est tout simplement extra ! Je peut l’actualiser en temp
         réel, plus besoins de l’imprimante.`,
-    name: "Olivier Garcia",
+    name: "Olivier Garcia 4",
     position: "Directeur",
     image: "/cooking.png",
   },
@@ -43,7 +43,7 @@ export const testimonials: Testimonial[] = [
     content: `J’ai découvert le logiciel smili pour lla carte connecté,
         c’est tout simplement extra ! Je peut l’actualiser en temp
         réel, plus besoins de l’imprimante.`,
-    name: "Olivier Garcia",
+    name: "Olivier Garcia 5",
     position: "Directeur",
     image: "/cooking.png",
   },

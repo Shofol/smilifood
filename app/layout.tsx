@@ -7,15 +7,15 @@ import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SmiliFood",
+  title: "Fastfood",
   description:
     "Economisez du temp et de l’argent avec votre logiciel Smili food",
   openGraph: {
-    title: "SmiliFood",
+    title: "Fastfood",
     description:
       "Economisez du temp et de l’argent avec votre logiciel Smili food",
     url: "https://nextjs.org",
-    siteName: "SmiliFood",
+    siteName: "Fastfood",
     images: [
       {
         url: "/heroBg.png",

@@ -11,7 +11,7 @@ const Navbar = () => {
   const [currentMenu, setCurrentMenu] = useState("");
 
   return (
-    <div className="fixed left-0 top-0 w-full bg-white z-30 border-b border-b-gray-200">
+    <nav className="fixed left-0 top-0 w-full bg-white z-30 border-b border-b-gray-200">
       <div className="flex justify-between items-center max-w-7xl mx-auto py-6 px-5 lg:px-0">
         <Link href={"/"}>
           <Image src={"/logo.svg"} width={200} height={60} alt="logo" />
@@ -169,7 +169,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

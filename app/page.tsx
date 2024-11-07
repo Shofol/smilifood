@@ -1,3 +1,5 @@
+"use client";
+
 import AppFeatures from "@/components/Home/AppFeatures";
 import Features from "@/components/Home/Features";
 import Hero from "@/components/Home/Hero";
