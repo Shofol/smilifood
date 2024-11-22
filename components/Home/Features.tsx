@@ -1,42 +1,38 @@
 "use client";
 
-import React from "react";
-
 const Features = () => {
   return (
-    <div className="pt-5 lg:pt-24 max-w-7xl mx-auto">
+    <div className="pt-5 lg:pt-24 max-w-7xl mx-5 lg:mx-10 xl:mx-auto">
       <h2 className="text-3xl font-bold text-br-dark text-center">
-        Smili food un outil tout-en-un pour développer votre activité grâce à
-        Internet
+        Fastfood is an all-in-one tool to develop your business through the
+        internet
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:my-20 my-10 px-5 lg:px-0">
         <div className="bg-br-primary p-12 shadow-md rounded-lg">
           <h3 className="text-br-lgreen-2 text-2xl font-bold pb-5">
-            Gagnez des clients
+            Win customers
           </h3>
           <p className="text-br-ldark">
-            Convertissez les clients en ligne avec notre réservation en ligne et
-            offrez une expérience de commande fluide sur place avec nos
-            solutions.
+            Convert online customers with our online booking and provide a
+            seamless on-site ordering experience with our solutions.
           </p>
         </div>
         <div className="bg-br-mgreen p-12 shadow-md rounded-lg">
           <h3 className="text-br-mgreen-2 text-2xl font-bold pb-5">
-            Gagnez du temp
+            Save time
           </h3>
           <p className="text-br-ldark">
-            Simplifiez votre quotidien grâce à notre série de fonctionnalités
-            conçues pour améliorer l&apos;expérience client et celle de votre
-            équipe.
+            Simplify your daily life with our series of features designed to
+            improve the customer experience and that of your team.
           </p>
         </div>
         <div className="bg-br-dgreen p-12 shadow-md rounded-lg">
           <h3 className="text-br-mgreen text-2xl font-bold pb-5">
-            Augmentez votre CA
+            Increase your turnover
           </h3>
           <p className="text-br-ldark">
-            Maximisez votre panier chiffre d’affaireen créant des parcours de
-            commande optimisés avec Smili food.
+            Maximize your shopping cart turnover by creating optimized ordering
+            paths with Smili food.
           </p>
         </div>
       </div>

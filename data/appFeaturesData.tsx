@@ -3,16 +3,16 @@ import Button from "../components/layout/Button";
 
 export const featuresData: Feature[] = [
   {
-    heading: "Menu connecté.",
+    heading: "Connected Menu",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!
         </p>
         <div className="flex justify-start">
           <Button
-            title="Découvrir"
+            title="Discover"
             type="primary"
             actionType="link"
             className="shadow-md py-1"
@@ -23,12 +23,12 @@ export const featuresData: Feature[] = [
     image: "/menu1.png",
   },
   {
-    heading: "Commande en ligne.",
+    heading: "Order Online",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!
         </p>
         <div className="flex justify-start">
           <Button
@@ -43,12 +43,12 @@ export const featuresData: Feature[] = [
     image: "/menu2.png",
   },
   {
-    heading: "Réservation table en ligne.",
+    heading: "Online Table Reservation",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!
         </p>
         <div className="flex justify-start">
           <Button
@@ -63,12 +63,12 @@ export const featuresData: Feature[] = [
     image: "/menu3.png",
   },
   {
-    heading: "Carte connecté +.",
+    heading: "Connect Cards",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!!
         </p>
         <div className="flex justify-start">
           <Button

@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed left-0 top-0 w-full bg-white z-30 border-b border-b-gray-200">
-      <div className="flex justify-between items-center max-w-7xl mx-auto py-6 px-5 lg:px-0">
+      <div className="flex justify-between items-center max-w-7xl mx-auto py-6 px-5 xl:px-0">
         <Link
           href={"/"}
           className="text-5xl font-bold font-sans text-br-secondary"
@@ -168,7 +168,7 @@ const Navbar = () => {
             href={"/connexion"}
             className="bg-br-secondary px-12 py-2 text-white rounded-md hover:bg-br-primary transition-colors duration-300"
           >
-            Essayer
+            Try Now
           </Link>
         </div>
       </div>
@@ -185,14 +185,14 @@ const routes: Route[] = [
     title: "Solutions",
     subMenus: [
       {
-        title: "Menu connecté",
+        title: "Connected Menu",
         href: "/solutions",
         icon: "/menuArt.svg",
         iconWidth: 160,
         iconHeight: 160,
       },
       {
-        title: "Commande en ligne",
+        title: "Order Online",
         href: "/blog",
         icon: "/blogArt.svg",
         iconWidth: 180,
@@ -209,7 +209,7 @@ const routes: Route[] = [
     href: "/blog",
   },
   {
-    title: "Connexion",
+    title: "Login",
     href: "/connexion",
   },
 ];

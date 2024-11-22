@@ -3,12 +3,13 @@ import Button from "../components/layout/Button";
 
 export const faqsData: FAQ[] = [
   {
-    heading: "1. Comment veux tu trouver une phrase si tu reflechis pas ?",
+    heading:
+      "1. How do you expect to find a sentence if you don't think about it?",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!!
         </p>
         <div className="flex justify-start">
           <Button
@@ -22,12 +23,12 @@ export const faqsData: FAQ[] = [
     ),
   },
   {
-    heading: "2. Ici question numéro deux ?",
+    heading: "2. Here Question No 2 ?",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!!
         </p>
         <div className="flex justify-start">
           <Button
@@ -41,12 +42,12 @@ export const faqsData: FAQ[] = [
     ),
   },
   {
-    heading: "3. une phrase si tu reflechis pas ?",
+    heading: "3. Any more questions ?",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!!
         </p>
         <div className="flex justify-start">
           <Button

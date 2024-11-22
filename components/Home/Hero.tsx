@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import Button from "../layout/Button";
 import { motion } from "framer-motion";
 
@@ -24,23 +23,24 @@ const Hero = () => {
   );
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 items-center py-20 max-w-7xl mx-auto mt-10 lg:mt-24">
+    <div className="flex flex-col lg:flex-row gap-10 items-center py-20 max-w-7xl mx-5 lg:mx-10 xl:mx-auto mt-10 lg:mt-24">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
         className="px-5 lg:px-0"
       >
-        <h1 className="text-4xl lg:text-5xl font-bold text-br-dark leading-tight">
-          Economisez du temp et de l’argent avec votre logiciel Smili food
+        <h1 className="text-4xl lg:text-3xl text-center font-bold text-br-dark leading-snug">
+          Save time and money with{" "}
+          <span className="text-br-dgreen text-9xl">Fastfood</span>
         </h1>
-        <p className="text-lg text-br-ldark font-light pt-5 max-w-lg">
-          Simplifiez votre activité de restauration en optimisant chaque étape
-          et concentrez-vous sur le développement de votre restaurant.
+        <p className="text-lg text-br-ldark font-light pt-5 max-w-lg text-center">
+          Simplify your restaurant business by optimizing every step and focus
+          on growing your restaurant.
         </p>
-        <div className="mt-8 flex justify-start">
+        <div className="mt-8 flex justify-center">
           <Button
-            title="Nous conctacter"
+            title="Contact Us"
             type="primary"
             actionType="link"
             target="/#contact"

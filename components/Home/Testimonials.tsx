@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
@@ -13,10 +12,10 @@ const Testimonials = () => {
       <div className=" flex flex-col">
         <div className="max-w-7xl mx-auto w-full text-br-dark lg:pl-10">
           <h3 className="text-left text-3xl font-bold">
-            Découvrez les avis de nos cleints
+            Discover our customers&#39 opinions
           </h3>
           <p className="text-xl mt-2 border-l-4 border-l-br-primary pl-2">
-            Essayer Smili food c’est l’adopter!
+            Try Fastfood and you will love it!
           </p>
         </div>
         <motion.div

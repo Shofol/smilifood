@@ -8,43 +8,33 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    content: `J’ai découvert le logiciel smili pour lla carte connecté,
-        c’est tout simplement extra ! Je peut l’actualiser en temp
-        réel, plus besoins de l’imprimante.`,
+    content: `I discovered the smili software for the connected card, it's simply great! I can update it in real time, no more need for the printer.`,
     name: "Olivier Garcia",
-    position: "Directeur",
+    position: "Director",
     image: "/cooking.png",
   },
   {
-    content: `J’ai découvert le logiciel smili pour lla carte connecté,
-        c’est tout simplement extra ! Je peut l’actualiser en temp
-        réel, plus besoins de l’imprimante.`,
+    content: `I discovered the smili software for the connected card, it's simply great! I can update it in real time, no more need for the printer.`,
     name: "Olivier Garcia 2",
-    position: "Directeur",
+    position: "Director",
     image: "/cooking.png",
   },
   {
-    content: `J’ai découvert le logiciel smili pour lla carte connecté,
-        c’est tout simplement extra ! Je peut l’actualiser en temp
-        réel, plus besoins de l’imprimante.`,
+    content: `I discovered the smili software for the connected card, it's simply great! I can update it in real time, no more need for the printer.`,
     name: "Olivier Garcia 3",
-    position: "Directeur",
+    position: "Director",
     image: "/cooking.png",
   },
   {
-    content: `J’ai découvert le logiciel smili pour lla carte connecté,
-        c’est tout simplement extra ! Je peut l’actualiser en temp
-        réel, plus besoins de l’imprimante.`,
+    content: `I discovered the smili software for the connected card, it's simply great! I can update it in real time, no more need for the printer.`,
     name: "Olivier Garcia 4",
-    position: "Directeur",
+    position: "Director",
     image: "/cooking.png",
   },
   {
-    content: `J’ai découvert le logiciel smili pour lla carte connecté,
-        c’est tout simplement extra ! Je peut l’actualiser en temp
-        réel, plus besoins de l’imprimante.`,
+    content: `I discovered the smili software for the connected card, it's simply great! I can update it in real time, no more need for the printer.`,
     name: "Olivier Garcia 5",
-    position: "Directeur",
+    position: "Director",
     image: "/cooking.png",
   },
 ];
