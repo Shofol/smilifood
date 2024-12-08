@@ -3,17 +3,16 @@ import Button from "../components/layout/Button";
 
 export const salesFeaturesData: SalesFeature[] = [
   {
-    heading: "Augmentez vos ventes.",
+    heading: "Increase your sales",
     content: (
       <>
         <p className="mb-4">
-          Faites le choix du click & collect pour offrir à vos clients une
-          expérience de commande en ligne rapide et pratique, tout en augmentant
-          vos ventes.
+          Choose click & collect to offer your customers a fast and convenient
+          online ordering experience, while increasing your sales.
         </p>
         <div className="flex justify-start">
           <Button
-            title="Essayer"
+            title="Try Now"
             type="primary"
             actionType="link"
             className="shadow-md py-1"
@@ -23,16 +22,16 @@ export const salesFeaturesData: SalesFeature[] = [
     ),
   },
   {
-    heading: "Moins de temps à gérer, plus de temps à cuisiner.",
+    heading: "Less time managing, more time cooking",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!
         </p>
         <div className="flex justify-start">
           <Button
-            title="Découvrir"
+            title="Discover"
             type="primary"
             actionType="link"
             className="shadow-md py-1"
@@ -42,16 +41,16 @@ export const salesFeaturesData: SalesFeature[] = [
     ),
   },
   {
-    heading: "Des outils simples à utiliser.",
+    heading: "Easy to use tools",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!
         </p>
         <div className="flex justify-start">
           <Button
-            title="Découvrir"
+            title="Discover"
             type="primary"
             actionType="link"
             className="shadow-md py-1"
@@ -61,16 +60,16 @@ export const salesFeaturesData: SalesFeature[] = [
     ),
   },
   {
-    heading: "Simplifiez vous la vie.",
+    heading: "Make your life easier",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time! !
         </p>
         <div className="flex justify-start">
           <Button
-            title="Découvrir"
+            title="Discover"
             type="primary"
             actionType="link"
             className="shadow-md py-1"

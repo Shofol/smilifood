@@ -2,28 +2,26 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 
 const Solution = () => {
   return (
     <div className="bg-br-mgreen">
-      <div className="max-w-7xl mx-auto py-24 text-br-dark px-5 lg:px-0">
+      <div className="max-w-7xl mx-5 lg:mx-10 xl:mx-auto py-24 text-br-dark px-5 lg:px-0">
         <h2 className="text-3xl text-center font-bold mb-10">
-          Profitez de notre solution numérique optimisée pour un parcours
-          digital fluide et efficace, tant pour vos clients que pour votre
-          restaurant.
+          Take advantage of our optimized digital solution for a smooth and
+          efficient digital journey, <br className="hidden xl:block" />
+          both for your customers and for your restaurant.
         </h2>
         <div className="flex flex-col lg:flex-row items-center lg:gap-48 mt-10 lg:mt-20">
           <p className="text-xl flex-1 lg:items-center">
-            Améliorez votre expérience client en proposant une solution de
-            commande en ligne intuitive et efficace. Avec notre solution, vos
-            clients peuvent commander facilement depuis leur téléphone ou leur
-            ordinateur, sans attendre au téléphone ou en personne. Vous pouvez
-            personnaliser votre menu en fonction de vos préférences, de
-            l&apos;heure de la journée et des événements spéciaux. Notre
-            solution vous permet également de mieux connaître vos clients en
-            recueillant des informations importantes telles que leurs
-            préférences alimentaires et leurs coordonnées.
+            Improve your customer experience by offering an intuitive and
+            efficient online ordering solution. With our solution, your
+            customers can easily order from their phone or computer, without
+            waiting on the phone or in person. You can customize your menu based
+            on your preferences, time of day, and special events. Our solution
+            also allows you to better understand your customers by collecting
+            important information such as their dietary preferences and contact
+            information.
           </p>
           <div className="flex-1 w-full lg:w-auto mt-10 lg:mt-0">
             <motion.div

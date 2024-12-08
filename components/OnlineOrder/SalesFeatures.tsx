@@ -1,14 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import { salesFeaturesData } from "@/data/salesFeaturesData";
 import Disclousures from "../layout/Disclousures";
 
 const SalesFeatures = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-7xl mx-auto my-10 lg:my-24">
-      <div className="flex-1 h-96 lg:h-auto lg:min-h-screen py-10 lg:mr-20">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-7xl mx-5 lg:mx-10 xl:mx-auto my-10 lg:my-24">
+      <div className="flex-1 h-96 lg:min-h-[40vh] xl:min-h-screen py-10 lg:mr-20">
         <div className="relative h-full flex">
           <Image
             src={"/cooking.png"}

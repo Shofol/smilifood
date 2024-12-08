@@ -1,11 +1,10 @@
 import { ReactNode } from "react";
-import Button from "../components/layout/Button";
 
 export const advantagessData: Advantage[] = [
   {
-    title: "Facile d’utilisation",
+    title: "Easy to use",
     content:
-      "La création de votre carte est simple et intuitive, quelques minutes suffiront!",
+      "Creating your card is simple and intuitive, just a few minutes will be enough!",
     image: (
       <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -17,8 +16,7 @@ export const advantagessData: Advantage[] = [
   },
   {
     title: "Photos & Description",
-    content:
-      "Pour chaque plat pour pouvez rajouter une photo, une description & des déclinaisons.",
+    content: "For each dish you can add a photo, a description & variations.",
     image: (
       <svg viewBox="0 0 48 62" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -29,9 +27,9 @@ export const advantagessData: Advantage[] = [
     ),
   },
   {
-    title: "Modifiable en Temps Réel",
+    title: "Editable in Real Time",
     content:
-      "Actualisez vos plats du jours ainsi que la disponibilité de vos plats en temps réel.",
+      "Update your daily specials as well as the availability of your dishes in real time.",
     image: (
       <svg viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -42,9 +40,9 @@ export const advantagessData: Advantage[] = [
     ),
   },
   {
-    title: "Allergènes & Restrictions",
+    title: "Allergens & Restrictions",
     content:
-      "Indiquez les allergènes de vos plats ainsi que leur particularités (bio, vegan, fait-maison,...).",
+      "Indicate the allergens in your dishes as well as their particularities (organic, vegan, homemade, etc.).",
     image: (
       <svg viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -55,9 +53,9 @@ export const advantagessData: Advantage[] = [
     ),
   },
   {
-    title: "Une carte à votre image",
+    title: "A card in your image",
     content:
-      "Vous avez la possibilité de créer votre carte entièrement à vos gouts !",
+      "You have the possibility to create your card entirely to your tastes!",
     image: (
       <svg viewBox="0 0 50 65" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -68,9 +66,9 @@ export const advantagessData: Advantage[] = [
     ),
   },
   {
-    title: "Augmentation panier moyen",
+    title: "Increase in average basket",
     content:
-      "La carte digitale augmentera en moyenne de 15 à 30% votre panier moyen !",
+      "The digital card will increase your average basket by 15 to 30% on average!",
     image: (
       <svg viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
         <path

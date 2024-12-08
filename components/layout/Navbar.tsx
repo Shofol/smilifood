@@ -186,14 +186,14 @@ const routes: Route[] = [
     subMenus: [
       {
         title: "Connected Menu",
-        href: "/solutions",
+        href: "/connected-menu",
         icon: "/menuArt.svg",
         iconWidth: 160,
         iconHeight: 160,
       },
       {
         title: "Order Online",
-        href: "/blog",
+        href: "/online-order",
         icon: "/blogArt.svg",
         iconWidth: 180,
         iconHeight: 180,
@@ -203,10 +203,6 @@ const routes: Route[] = [
   {
     title: "Contact",
     href: "/contact",
-  },
-  {
-    title: "Blog",
-    href: "/blog",
   },
   {
     title: "Login",

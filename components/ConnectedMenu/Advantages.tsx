@@ -1,24 +1,22 @@
 "use client";
 
-import Image from "next/image";
-import React, { ReactNode, useRef } from "react";
+import { ReactNode, useRef } from "react";
 import { advantagessData } from "../../data/advantages";
 
 const Advantages = () => {
   return (
     <div className="bg-br-mgreen py-24">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-5 lg:mx-10 xl:mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 px-5 lg:px-0">
           <div className="lg:col-span-2 text-br-dark text-center lg:text-right">
             <h3 className="text-3xl font-bold">
-              Tous les avantages d&apos;un <br className="hidden lg:block" />{" "}
-              menu connecté
+              All the advantages of a<br className="hidden lg:block" />
+              connected menu
             </h3>
             <p className="pt-4">
-              Offrez à votre restaurant tous les avantages d&apos;une carte
-              numérique en toute simplicité. Avec votre compte, créez facilement
-              vos produits, boissons et menus, et mettez-les à jour en temps
-              réel pour une expérience de commande optimale.
+              Give your restaurant all the benefits of a digital menu with ease.
+              With your account, easily create your products, drinks and menus,
+              and update them in real time for an optimal ordering experience.
             </p>
           </div>
           {advantagessData.map((adv, index) => {

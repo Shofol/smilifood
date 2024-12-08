@@ -3,17 +3,17 @@ import Button from "../components/layout/Button";
 
 export const benefitsData: Benefit[] = [
   {
-    heading: "Créez votre carte connecté et diffusez la à partir de code QR",
+    heading: "Create your connected card and distribute it from QR code",
     content: (
       <>
         <p className="mb-4">
-          Depuis votre dashboard vous pouvez alimenter votre carte en temp réel
-          ! Vous pouvez mettre des allergènes, photos, déclinaisons... Le + la
-          carte se modifie en direct sur le smartphone de vos clients.
+          From your dashboard you can update your menu in real time! You can add
+          allergens, photos, variations, etc. The + is that the menu can be
+          modified live on your customers smartphones.
         </p>
         <div className="flex justify-start">
           <Button
-            title="Essayer"
+            title="Try Now"
             type="primary"
             actionType="link"
             className="shadow-md py-1"
@@ -23,16 +23,16 @@ export const benefitsData: Benefit[] = [
     ),
   },
   {
-    heading: "Economisez du temps",
+    heading: "Save Time",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!
         </p>
         <div className="flex justify-start">
           <Button
-            title="Découvrir"
+            title="Discover"
             type="primary"
             actionType="link"
             className="shadow-md py-1"
@@ -42,16 +42,16 @@ export const benefitsData: Benefit[] = [
     ),
   },
   {
-    heading: "Améliorez l’expérience client",
+    heading: "Improve the customer experience",
     content: (
       <>
         <p className="mb-4">
-          Créez votre menu en ligne en quelques cliques, et partagez le sur vos
-          tables avec de code QR. Modifiez le en temp réel !
+          Create your menu online in a few clicks, and share it on your tables
+          with QR codes. Modify it in real time!
         </p>
         <div className="flex justify-start">
           <Button
-            title="Découvrir"
+            title="Discover"
             type="primary"
             actionType="link"
             className="shadow-md py-1"

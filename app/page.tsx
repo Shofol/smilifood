@@ -6,7 +6,7 @@ import Hero from "@/components/Home/Hero";
 import QrCode from "@/components/Home/QrCode";
 import Support from "@/components/Home/Support";
 import Testimonials from "@/components/Home/Testimonials";
-import Faq from "../components/Solutions/Faq";
+import Faq from "../components/ConnectedMenu/Faq";
 
 export default function Home() {
   return (

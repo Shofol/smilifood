@@ -1,10 +1,10 @@
-import Hero from "@/components/Solutions/Hero";
+import Hero from "@/components/ConnectedMenu/Hero";
 import QrCode from "@/components/Home/QrCode";
-import Advantages from "@/components/Solutions/Advantages";
-import Benefits from "@/components/Solutions/Benefits";
-import Discover from "@/components/Solutions/Discover";
-import Faq from "@/components/Solutions/Faq";
-import How from "@/components/Solutions/How";
+import Advantages from "@/components/ConnectedMenu/Advantages";
+import Benefits from "@/components/ConnectedMenu/Benefits";
+import Discover from "@/components/ConnectedMenu/Discover";
+import Faq from "@/components/ConnectedMenu/Faq";
+import How from "@/components/ConnectedMenu/How";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
