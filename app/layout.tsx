@@ -8,13 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Fastfood",
-  description:
-    "Economisez du temp et de l’argent avec votre logiciel Smili food",
+  description: "Save time and money with your FastFood",
   openGraph: {
     title: "Fastfood",
-    description:
-      "Economisez du temp et de l’argent avec votre logiciel Smili food",
-    url: "https://nextjs.org",
+    description: "Save time and money with your FastFood",
+    url: "https://smilifood.vercel.app/",
     siteName: "Fastfood",
     images: [
       {

@@ -32,7 +32,7 @@ const Features = () => {
           </h3>
           <p className="text-br-ldark">
             Maximize your shopping cart turnover by creating optimized ordering
-            paths with Smili food.
+            paths with FastFood.
           </p>
         </div>
       </div>

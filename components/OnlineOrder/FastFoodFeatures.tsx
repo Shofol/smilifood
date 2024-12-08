@@ -1,6 +1,6 @@
 "use client";
 
-const SmiliFeatures = () => {
+const FastFoodFeatures = () => {
   return (
     <div className="pt-5 lg:pt-24 max-w-7xl mx-5 lg:mx-10 xl:mx-auto">
       <h2 className="text-3xl font-bold text-br-dark text-center">
@@ -38,4 +38,4 @@ const SmiliFeatures = () => {
   );
 };
 
-export default SmiliFeatures;
+export default FastFoodFeatures;

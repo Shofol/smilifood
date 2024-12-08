@@ -1,6 +1,6 @@
 import QrCode from "../../components/Home/QrCode";
 import Hero from "@/components/OnlineOrder/Hero";
-import SmiliFeatures from "@/components/OnlineOrder/SmiliFeatures";
+import FastFoodFeatures from "@/components/OnlineOrder/FastFoodFeatures";
 import SalesFeatures from "@/components/OnlineOrder/SalesFeatures";
 import Solution from "@/components/OnlineOrder/Solution";
 import Faq from "@/components/ConnectedMenu/Faq";
@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <div>
       <Hero />
-      <SmiliFeatures />
+      <FastFoodFeatures />
       <SalesFeatures />
       <Solution />
       <QrCode />
