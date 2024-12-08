@@ -165,7 +165,8 @@ const Navbar = () => {
             );
           })}
           <Link
-            href={"/connexion"}
+            href={"https://play.google.com/store/apps?pli=1"}
+            target="_blank"
             className="bg-br-secondary px-12 py-2 text-white rounded-md hover:bg-br-primary transition-colors duration-300"
           >
             Try Now
@@ -202,11 +203,7 @@ const routes: Route[] = [
   },
   {
     title: "Contact",
-    href: "/contact",
-  },
-  {
-    title: "Login",
-    href: "/connexion",
+    href: "/",
   },
 ];
 
