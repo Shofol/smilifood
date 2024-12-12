@@ -12,7 +12,7 @@ const Testimonials = () => {
       <div className=" flex flex-col">
         <div className="max-w-7xl mx-auto w-full text-br-dark lg:pl-10">
           <h3 className="text-left text-3xl font-bold">
-            Discover our customers&#39 opinions
+            Discover our customers opinions
           </h3>
           <p className="text-xl mt-2 border-l-4 border-l-br-primary pl-2">
             Try Fastfood and you will love it!
@@ -26,9 +26,6 @@ const Testimonials = () => {
           className="lg:ml-20"
         >
           <Swiper
-            // slidesPerView={2.8}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{
               640: {
                 slidesPerView: 1,

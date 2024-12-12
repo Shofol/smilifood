@@ -30,9 +30,9 @@ const Hero = () => {
         transition={{ duration: 0.75 }}
         className="px-5 lg:px-0"
       >
-        <h1 className="text-4xl lg:text-3xl text-center font-bold text-br-dark leading-snug">
-          Save time and money with{" "}
-          <span className="text-br-dgreen text-9xl">Fastfood</span>
+        <h1 className="text-3xl text-center font-bold text-br-dark leading-snug">
+          Save time and money with <br className="hidden lg:block" />
+          <span className="text-br-dgreen text-5xl lg:text-9xl">Fastfood</span>
         </h1>
         <p className="text-lg text-br-ldark font-light pt-5 max-w-lg text-center">
           Simplify your restaurant business by optimizing every step and focus

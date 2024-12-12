@@ -24,13 +24,13 @@ const Footer = () => {
                 <span>Solutions</span>
                 <Link
                   className="text-br-dark text-sm hover:text-br-primary"
-                  href={"/solutions"}
+                  href={"/connected-menu"}
                 >
                   Connected Menu
                 </Link>
                 <Link
                   className="text-br-dark text-sm hover:text-br-primary"
-                  href={"/blog"}
+                  href={"/online-order"}
                 >
                   Order Online
                 </Link>

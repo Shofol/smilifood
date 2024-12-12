@@ -83,7 +83,6 @@ const Navbar = () => {
                   onMouseMove={() => {
                     if (!route.href) {
                       setCurrentMenu(route.title);
-                      console.log(currentMenu);
                     } else {
                       setCurrentMenu("");
                     }

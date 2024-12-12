@@ -55,7 +55,6 @@ const Card = ({
       fillRef.current.style.left = `${
         event.clientX - containerRef.current.getBoundingClientRect().left
       }px`;
-      console.log(containerRef.current.getBoundingClientRect().top);
       fillRef.current.style.top = `${
         event.clientY - containerRef.current.getBoundingClientRect().top
       }px`;
